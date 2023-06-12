@@ -21,7 +21,7 @@ function BaseCategories({ categoryId }) {
     // console.log(recipies)
     // }
     return (
-        <>
+        <div className="bg-sysBackgroundColor min-h-screen bg-cover">
             <NavBar />
             <div className="container mx-auto mt-4">
                 <div className="bg-recipeBg h-[80vh]  bg-no-repeat bg-contain">
@@ -60,10 +60,10 @@ function BaseCategories({ categoryId }) {
                     </div>
 
 
-                </div>
+                g</div>
             </div>
 
-        </>
+        </div>
     )
 
 }
