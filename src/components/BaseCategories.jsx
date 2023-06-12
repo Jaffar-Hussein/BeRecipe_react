@@ -5,19 +5,19 @@ import Cards from "./cards";
 import { NavLink } from "react-router-dom";
 function BaseCategories({ categoryId }) {
     const [category, setCategories] = useState([])
-    const [recipies, setRecipies] = useState([])
+    // const [recipies, setRecipies] = useState([])
     React.useEffect(() => {
         axios.get(`http://127.0.0.1:8000/all_categories`)
             .then((response) => {
                 setCategories(response.data)
             })
     }, [])
-    React.useEffect(() => {
-        axios.get(`http://localhost:8000/recipies_details?rec=${categoryId}`)
-            .then((response) => {
-                setRecipies(response.data)
-            })
-    }, [])
+    // React.useEffect(() => {
+    //     axios.get(`http://localhost:8000/recipies_details?rec=${categoryId}`)
+    //         .then((response) => {
+    //             setRecipies(response.data)
+    //         })
+    // }, [])
     // console.log(recipies)
     // }
     return (
@@ -52,7 +52,7 @@ function BaseCategories({ categoryId }) {
                                 <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search recipes or ingredients ..." required />
                                 {/* <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button> */}
                                 <div className="grid grid-cols-3 gap-5">
-                                    <Cards rec={recipies} />
+                                    <Cards rec={categoryId} />
                                 </div>
                             </div>
                         </form>

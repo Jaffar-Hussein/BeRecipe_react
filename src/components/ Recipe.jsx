@@ -6,7 +6,7 @@ function Recipe() {
 
     return (
         <>
-        <BaseCategories categoryId=""/>
+        <BaseCategories categoryId="all"/>
         </>
     )
 

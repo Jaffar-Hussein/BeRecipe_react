@@ -23,7 +23,7 @@ function NavBar() {
                             <NavLink className="block py-2 pl-3 pr-4  bg-blue-700 rounded md:bg-transparent  md:p-0" to="/">Home</NavLink>
                         </li>
                         <li>
-                            <NavLink className="nav-link mx-2 " to="/recipes">Recipe</NavLink>
+                            <NavLink className="nav-link mx-2 " to={'/meal/' + "all"}>Recipe</NavLink>
                             {/* <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Recipe</a> */}
                         </li>
                         <li>
