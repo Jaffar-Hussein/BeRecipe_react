@@ -4,11 +4,13 @@ import RecipeCategory from './RecipeCategories';
 import NavBar from './Nav';
 import Popular from './popular';
 import CallAction from './callAction';
+
 function Hero() {
     return (
 
         <div className='bg-sysBackgroundColor min-h-screen bg-cover'>
             <NavBar />
+            
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                     <div className='leading-loose'>
@@ -16,7 +18,7 @@ function Hero() {
                             consectetur.
                         </p>
                         <p className=''>Lorem ipsum dolor sit amet consectetur. Leo sociis velit <br></br>
-                            neque integer fermentum dignissim id maecenas. Nulla <br></br> tellus tincidunt nibh pellentesque mattis mi odio dignissim
+                               neque integer fermentum dignissim id maecenas. Nulla <br></br> tellus tincidunt nibh pellentesque mattis mi odio dignissim
                             <br></br> convallis.</p>
                     </div>
                     <div>
