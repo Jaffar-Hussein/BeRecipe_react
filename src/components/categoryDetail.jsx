@@ -8,7 +8,7 @@ function CategoryDetails() {
     const [recipies, setRecipies] = useState([])
 
     React.useEffect(() => {
-        axios.get(`http://localhost:8000/recipies_details?rec=${category}`)
+        axios.get(`https://berecipedjango-production.up.railway.app/recipies_details?rec=${category}`)
             .then((response) => {
                 setRecipies(response.data)
             })
